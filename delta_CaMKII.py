@@ -1,5 +1,3 @@
-__author__ = 'fairly'
-
 import pprint
 
 import xlrd
@@ -10,6 +8,8 @@ from scipy.optimize import leastsq
 from scipy.optimize import minimize
 import matplotlib.pyplot as plt
 
+__author__ = 'fairly'
+
 
 def get_Cai(t0):
     t = t0 % (1000 / 3)
@@ -19,6 +19,7 @@ def get_Cai(t0):
         return 1.5E-3 * (200 - t) / 110
     else:
         return 0
+
 
 
 def CaM_transition(y, t0, CaM_total):
